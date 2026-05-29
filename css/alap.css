@@ -1,9 +1,7 @@
 @import url("nyomtatas.css") print;
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&family=Open+Sans:wght@400;600&display=swap');
 
-/* =============================================
-   Alap beállítások
-   ============================================= */
+/* Alap beállítások */
 body {
     font-family: 'Open Sans', Arial, sans-serif;
     font-size: 1rem;
@@ -12,9 +10,7 @@ body {
     background-color: #fff;
 }
 
-/* =============================================
-   Tipográfia
-   ============================================= */
+/* Tipográfia */
 h1, h2, h3, h4 {
     font-family: 'Lora', Georgia, serif;
 }
@@ -37,9 +33,7 @@ h3 {
     color: #7b1a1a;
 }
 
-/* =============================================
-   Linkek
-   ============================================= */
+/* Linkek */
 a {
     color: #0d47a1;
     text-decoration: underline;
@@ -56,9 +50,17 @@ a:focus {
     text-decoration: underline;
 }
 
-/* =============================================
-   Fejléc – háttérkép + overlay
-   ============================================= */
+/* Látogatott linkek a főtartalomban */
+main a:visited {
+    color: #4a148c;
+    text-decoration: underline;
+}
+
+main a:visited:hover {
+    color: #7b1a1a;
+}
+
+/* Fejléc – háttérkép overlay-jel */
 header {
     background-image: linear-gradient(rgba(255,255,255,0.72), rgba(255,255,255,0.72)),
                       url('../kepek/tavaszi-nagy.jpg');
@@ -97,18 +99,9 @@ header img.logo {
     margin-bottom: 0.3rem;
 }
 
-/* =============================================
-   Navigáció – széthúzott, nagyobb betű
-   ============================================= */
+/* Navigáció */
 .navbar {
     background-color: #1a237e !important;
-}
-
-.navbar-brand {
-    color: #fff !important;
-    font-family: 'Lora', serif;
-    font-size: 1rem;
-    text-decoration: none;
 }
 
 .navbar-nav {
@@ -141,13 +134,7 @@ header img.logo {
     border-color: #9fa8da !important;
 }
 
-.navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255,255,255,0.9)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
-}
-
-/* =============================================
-   Ugrás a tartalomra (akadálymentesség)
-   ============================================= */
+/* Ugrás a tartalomra */
 .skip-link {
     position: absolute;
     top: -9999px;
@@ -163,9 +150,7 @@ header img.logo {
     top: 0;
 }
 
-/* =============================================
-   Fő tartalom
-   ============================================= */
+/* Fő tartalom */
 main {
     background-color: #fff;
     padding: 1.5rem;
@@ -173,9 +158,7 @@ main {
     margin-bottom: 1rem;
 }
 
-/* =============================================
-   Idézet (blockquote)
-   ============================================= */
+/* Idézet */
 blockquote {
     border-left: 5px solid #1e88e5;
     background-color: #e3f2fd;
@@ -199,23 +182,14 @@ blockquote footer {
     border: none;
 }
 
-/* =============================================
-   Carousel
-   ============================================= */
+/* Carousel */
 .carousel-item img {
     object-fit: cover;
-    object-position: center;
     height: 560px;
     width: 100%;
 }
 
-@media screen and (max-width: 767px) {
-    .carousel-item img {
-        height: 280px;
-    }
-}
-
-/* Képenkénti pozíciók */
+/* Képpozíciók */
 .kep-teteje {
     object-position: center top;
 }
@@ -224,9 +198,7 @@ blockquote footer {
     object-position: center bottom;
 }
 
-/* =============================================
-   Videó
-   ============================================= */
+/* Videó */
 video {
     max-width: 100%;
     width: 100%;
@@ -234,9 +206,7 @@ video {
     display: block;
 }
 
-/* =============================================
-   Figyelem doboz
-   ============================================= */
+/* Figyelemfelhívás */
 .figyelem {
     background-color: #fff9c4;
     border-left: 5px solid #f9a825;
@@ -244,9 +214,7 @@ video {
     margin: 1rem 0;
 }
 
-/* =============================================
-   Képek és figure
-   ============================================= */
+/* Képek és figure */
 figure {
     margin: 1rem 0;
 }
@@ -264,9 +232,7 @@ img {
     height: auto;
 }
 
-/* =============================================
-   Aside (kiegészítő doboz)
-   ============================================= */
+/* Aside */
 aside.info-box {
     background-color: #e8f5e9;
     border-left: 5px solid #43a047;
@@ -281,9 +247,7 @@ aside.info-box h3 {
     border-color: #43a047;
 }
 
-/* =============================================
-   Bootstrap kártyák – folyamat.html
-   ============================================= */
+/* Bootstrap kártyák */
 .card {
     border-top: 4px solid #1e88e5;
     height: 100%;
@@ -300,22 +264,30 @@ aside.info-box h3 {
     font-weight: 700;
 }
 
-/* Gombok – zöld körvonal, Bootstrap 5 CSS változókkal */
-.btn-primary {
-    --bs-btn-color: #1b5e20;
-    --bs-btn-bg: #fff;
-    --bs-btn-border-color: #1b5e20;
-    --bs-btn-hover-color: #fff;
-    --bs-btn-hover-bg: #1b5e20;
-    --bs-btn-hover-border-color: #1b5e20;
-    --bs-btn-active-color: #fff;
-    --bs-btn-active-bg: #145214;
-    --bs-btn-active-border-color: #145214;
+.card-body h4 {
+    font-size: 0.95rem;
+    color: #555;
+    font-weight: 600;
+    font-family: 'Open Sans', Arial, sans-serif;
+    margin-top: 0.8rem;
+    margin-bottom: 0.2rem;
 }
 
-/* =============================================
-   Vissza a lap tetejére gomb
-   ============================================= */
+/* Gombok */
+.btn-primary {
+    background-color: #fff;
+    color: #1b5e20;
+    border: 2px solid #1b5e20;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #1b5e20;
+    color: #fff;
+    border-color: #1b5e20;
+}
+
+/* Vissza a lap tetejére */
 .vissza-teteje-doboz {
     text-align: right;
     margin-top: 2rem;
@@ -334,6 +306,10 @@ aside.info-box h3 {
     font-size: 0.9rem;
 }
 
+.vissza-tetejere:visited {
+    color: #1a237e;
+}
+
 .vissza-tetejere:hover,
 .vissza-tetejere:focus {
     background-color: #e8eaf6;
@@ -341,30 +317,12 @@ aside.info-box h3 {
     text-decoration: none;
 }
 
-.vissza-tetejere:visited {
-    color: #1a237e;
-}
-
-/* =============================================
-   Galéria – CSS Grid
-   ============================================= */
+/* Galéria – CSS Grid */
 .galeria-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
     margin-top: 1rem;
-}
-
-@media screen and (max-width: 767px) {
-    .galeria-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-@media screen and (min-width: 768px) and (max-width: 991px) {
-    .galeria-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
 }
 
 .galeria-grid figure {
@@ -387,33 +345,12 @@ aside.info-box h3 {
     font-size: 0.82rem;
 }
 
-/* =============================================
-   Technika oldal – Festék/Ecset elválasztó
-   ============================================= */
+/* Technika – elválasztó */
 .elvalaszto-sor {
     border-right: 2px solid #1e88e5;
 }
 
-@media screen and (max-width: 767px) {
-    .elvalaszto-sor {
-        border-right: none;
-        border-bottom: 2px solid #1e88e5;
-        margin-bottom: 1rem;
-        padding-bottom: 1rem;
-    }
-}
-
-/* =============================================
-   Táblázat – Bootstrap 5 CSS változókkal
-   ============================================= */
-table.table thead tr {
-    --bs-table-bg: #1a237e;
-    --bs-table-color: #fff;
-    --bs-table-border-color: #283593;
-    background-color: #1a237e;
-    color: #fff;
-}
-
+/* Táblázat */
 table.table thead th {
     color: #fff;
     background-color: #1a237e;
@@ -429,9 +366,7 @@ table.table tbody tr:nth-child(even) th {
     background-color: #fff;
 }
 
-/* =============================================
-   Stílusváltó
-   ============================================= */
+/* Stílusváltó */
 #styleswitch {
     text-align: right;
     padding: 0.3rem 1rem;
@@ -445,9 +380,7 @@ table.table tbody tr:nth-child(even) th {
     margin-right: 0.4rem;
 }
 
-/* =============================================
-   KONTRASZTOS NÉZET – fehér alapon fekete
-   ============================================= */
+/* Kontrasztos nézet */
 body.kontrasztos {
     background-color: #fff;
     color: #000;
@@ -494,15 +427,9 @@ body.kontrasztos a:visited {
     text-decoration: underline !important;
 }
 
-/* Navbar kontrasztos */
 body.kontrasztos .navbar {
     background-color: #fff !important;
     border-bottom: 2px solid #000;
-}
-
-body.kontrasztos .navbar-brand {
-    color: #000 !important;
-    font-size: 1.2rem !important;
 }
 
 body.kontrasztos .navbar-nav .nav-link,
@@ -516,41 +443,25 @@ body.kontrasztos .navbar-toggler {
     border-color: #000 !important;
 }
 
-body.kontrasztos .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0,0,0,1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
-}
-
-/* Elválasztóvonal kontrasztos */
 body.kontrasztos .elvalaszto-sor {
     border-right-color: #000 !important;
     border-bottom-color: #000 !important;
 }
 
-/* Gombok kontrasztos */
 body.kontrasztos .btn-primary {
-    --bs-btn-bg: #fff;
-    --bs-btn-color: #000;
-    --bs-btn-border-color: #000;
-    --bs-btn-hover-bg: #eee;
-    --bs-btn-hover-color: #000;
-    --bs-btn-hover-border-color: #000;
     background-color: #fff !important;
     color: #000 !important;
     border: 2px solid #000 !important;
 }
 
-/* Táblázat kontrasztos */
-body.kontrasztos table.table thead tr {
-    --bs-table-bg: #fff;
-    --bs-table-color: #000;
-    background-color: #fff !important;
-    color: #000 !important;
-    border-bottom: 2px solid #000;
+body.kontrasztos .btn-primary:hover {
+    background-color: #eee !important;
 }
 
 body.kontrasztos table.table thead th {
     background-color: #fff !important;
     color: #000 !important;
+    border-bottom: 2px solid #000;
 }
 
 body.kontrasztos table.table tbody tr:nth-child(odd) td,
@@ -561,7 +472,6 @@ body.kontrasztos table.table tbody tr:nth-child(even) th {
     color: #000 !important;
 }
 
-/* Vissza gomb kontrasztos */
 body.kontrasztos .vissza-tetejere,
 body.kontrasztos .vissza-tetejere:visited {
     background-color: #fff !important;
@@ -576,9 +486,18 @@ body.kontrasztos input[type="reset"] {
     border: 2px solid #000 !important;
 }
 
-/* =============================================
-   Lábléc
-   ============================================= */
+body.kontrasztos footer {
+    background-color: #fff !important;
+    color: #000 !important;
+    border-top: 2px solid #000 !important;
+}
+
+body.kontrasztos footer a,
+body.kontrasztos footer a:visited {
+    color: #000 !important;
+}
+
+/* Lábléc */
 footer {
     background-color: #1a237e;
     color: #fff;
@@ -603,20 +522,7 @@ footer address {
     font-style: normal;
 }
 
-body.kontrasztos footer {
-    background-color: #fff !important;
-    color: #000 !important;
-    border-top: 2px solid #000 !important;
-}
-
-body.kontrasztos footer a,
-body.kontrasztos footer a:visited {
-    color: #000 !important;
-}
-
-/* =============================================
-   Űrlap – kapcsolat.html
-   ============================================= */
+/* Űrlap */
 fieldset {
     border: 2px solid #1a237e;
     padding: 1.2rem;
@@ -650,11 +556,13 @@ textarea {
     font-family: 'Open Sans', Arial, sans-serif;
     background-color: #fff;
     color: #111;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 textarea {
     resize: vertical;
-    width: 100%;
 }
 
 .radio-group label,
@@ -697,51 +605,28 @@ input[type="reset"]:hover {
     background-color: #e8eaf6;
 }
 
-/* =============================================
-   Reszponzív
-   ============================================= */
-@media screen and (min-width: 768px) {
-    main {
-        padding: 2rem;
-    }
-}
-
-@media screen and (min-width: 992px) {
-    h1 {
-        font-size: 2.2rem;
-    }
-}
-
-/* =============================================
-   Nyomtatáskor elrejtett
-   ============================================= */
+/* Nyomtatáskor elrejtett */
 .nyomtatas {
     display: none;
 }
 
-/* =============================================
-   Látogatott linkek – main-en belül, magasabb specificitás
-   ============================================= */
-main a:visited {
-    color: #4a148c;
-    text-decoration: underline;
-}
-
-main a:visited:hover {
-    color: #7b1a1a;
-}
-
-/* =============================================
-   Mobilnézet – űrlap javítások
-   ============================================= */
-input[type="text"],
-input[type="email"] {
-    width: 100%;
-    max-width: 100%;
-    box-sizing: border-box;
-}
-
+/* Reszponzivitás */
 @media screen and (max-width: 767px) {
+    .carousel-item img {
+        height: 280px;
+    }
+
+    .galeria-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .elvalaszto-sor {
+        border-right: none;
+        border-bottom: 2px solid #1e88e5;
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
+    }
+
     .d-flex.justify-content-between {
         flex-direction: column;
         gap: 0.5rem;
@@ -753,14 +638,22 @@ input[type="email"] {
     }
 }
 
-/* =============================================
-   Pólófestés alcímek (h4) – kisebb méret a kártyákban
-   ============================================= */
-.card-body h4 {
-    font-size: 0.95rem;
-    color: #555;
-    font-weight: 600;
-    font-family: 'Open Sans', Arial, sans-serif;
-    margin-top: 0.8rem;
-    margin-bottom: 0.2rem;
+@media screen and (min-width: 768px) {
+    main {
+        padding: 2rem;
+    }
+
+    .galeria-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 992px) {
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    .galeria-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
