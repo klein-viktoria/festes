@@ -1,25 +1,27 @@
-/* =============================================
-   Nyomtatási stíluslap
-   ============================================= */
+/* Nyomtatási stíluslap */
 
-body {
-    font-family: Georgia, serif;
-    font-size: 11pt;
-    color: black;
-    background-color: white;
-    background-image: none;
-}
-
-nav, header, footer, #styleswitch, .carousel, .skip-link, details {
-    display: none !important;
-}
-
+nav,
+header,
+footer,
+#styleswitch,
+.carousel,
+.skip-link,
+.vissza-teteje-doboz,
+details,
 video {
     display: none !important;
 }
 
+body,
+body * {
+    font-family: Georgia, serif;
+    font-size: 11pt;
+    color: black !important;
+    background-color: white !important;
+    background-image: none !important;
+}
+
 main {
-    background-color: white;
     padding: 0;
 }
 
@@ -27,6 +29,17 @@ main {
     max-width: 100% !important;
     margin: 0;
     padding: 0;
+}
+
+h1, h2, h3 {
+    color: black !important;
+    border-color: black !important;
+    border-image: none !important;
+    text-transform: none !important;
+}
+
+blockquote {
+    border-left: 3px solid black;
 }
 
 img {
@@ -44,8 +57,6 @@ img {
 }
 
 table, th, td {
-    color: black !important;
-    background-color: white !important;
     border: 1px solid black !important;
 }
 
@@ -61,25 +72,6 @@ a::after {
     padding: 8px;
     margin: 8px 0;
     font-size: 0.9em;
-}
-
-body * {
-    color: black !important;
-    background-color: white !important;
-    background-image: none !important;
-}
-
-h1, h2, h3 {
-    color: black !important;
-    border-color: black !important;
-    border-image: none !important;
-    text-transform: none !important;
-}
-
-blockquote {
-    border-left: 3px solid black;
-    background-color: white !important;
-    color: black !important;
 }
 
 .col-md-4, .col-md-6, .col-md-8, .col-lg-4, .col-lg-6 {
