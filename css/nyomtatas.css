@@ -1,0 +1,88 @@
+/* =============================================
+   Nyomtatási stíluslap
+   ============================================= */
+
+body {
+    font-family: Georgia, serif;
+    font-size: 11pt;
+    color: black;
+    background-color: white;
+    background-image: none;
+}
+
+nav, header, footer, #styleswitch, .carousel, .skip-link, details {
+    display: none !important;
+}
+
+video {
+    display: none !important;
+}
+
+main {
+    background-color: white;
+    padding: 0;
+}
+
+.container-lg {
+    max-width: 100% !important;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 40% !important;
+    height: auto;
+}
+
+.galeria-grid {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.galeria-grid figure img {
+    height: auto;
+    max-height: 150px;
+}
+
+table, th, td {
+    color: black !important;
+    background-color: white !important;
+    border: 1px solid black !important;
+}
+
+a::after {
+    content: " (" attr(href) ")";
+    font-size: 0.8em;
+    color: #555;
+}
+
+.nyomtatas {
+    display: block;
+    border: 1px dashed gray;
+    padding: 8px;
+    margin: 8px 0;
+    font-size: 0.9em;
+}
+
+body * {
+    color: black !important;
+    background-color: white !important;
+    background-image: none !important;
+}
+
+h1, h2, h3 {
+    color: black !important;
+    border-color: black !important;
+    border-image: none !important;
+    text-transform: none !important;
+}
+
+blockquote {
+    border-left: 3px solid black;
+    background-color: white !important;
+    color: black !important;
+}
+
+.col-md-4, .col-md-6, .col-md-8, .col-lg-4, .col-lg-6 {
+    flex: 0 0 auto;
+    width: 100%;
+}

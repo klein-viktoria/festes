@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kezdőlap – Festés, a mindennapi kreativitás</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/alap.css">
+</head>
+<body id="lap-teteje">
+
+<a class="skip-link" href="#tartalom">Ugrás a tartalomra</a>
+
+<header>
+    <div class="container-lg">
+        <p class="oldalnev">Kezdőlap</p>
+        <div class="d-flex align-items-center">
+            <a href="index.html">
+                <img src="kepek/logo.jpg"
+                     alt="Szappanbuborék belsejéből készült fotó: a buborék felszínén tükröződve egy ablak és sötét szoba látható, szivárvány színű fénnyel"
+                     class="logo">
+            </a>
+            <div>
+                <h1>Festés</h1>
+                <p class="fejlec-alcim">a mindennapi kreativitás</p>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div id="styleswitch">
+    <label for="styleSwitcher">Nézet:</label>
+    <select id="styleSwitcher">
+        <option value="normal">Normál</option>
+        <option value="kontrasztos">Kontrasztos, nagy betű</option>
+    </select>
+</div>
+
+<nav class="navbar navbar-expand-md" aria-label="Főmenü">
+    <div class="container-lg">
+        <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#fonavigacio"
+                aria-controls="fonavigacio"
+                aria-expanded="false"
+                aria-label="Navigáció megnyitása">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="fonavigacio">
+            <ul class="navbar-nav w-100 justify-content-around">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Kezdőlap</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="folyamat.html">A festés élménye</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="technika.html">Alapanyagok és eszközök</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="galeria.html">Galéria</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="kapcsolat.html">Kapcsolat</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<main id="tartalom" class="container-lg">
+
+    <section>
+        <h2>Bevezető</h2>
+
+        <blockquote>
+            <p><b>Pablo Picasso</b> egyszer azt mondta: <i>„A festészet csak egy másik módja a naplóírásnak."</i></p>
+        </blockquote>
+
+        <p>Hogy ez mennyire igaz, azt ezen az oldalon keresztül szeretném bemutatni. A festés nem csupán színek felvitele egy felületre; ez egy belső utazás, amely a kiindulási állapottól, a résztvevőktől és az utazás módjától függően ezernyi kalandot tartogathat, és a legkülönfélébb úticélokhoz vezethet.</p>
+    </section>
+
+    <section>
+        <div id="galeriaCarousel" class="carousel slide" data-bs-ride="true" aria-label="Festményeim galériájából">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="kepek/szines-fa-nagy.jpg" class="d-block w-100 kep-teteje"
+                         alt="Két egymás mellé helyezett vászon: a bal oldali kék-zöld háttéren sötét ágú fát ábrázol kék, zöld, sárga levelekkel; a jobb oldali narancssárga-piros háttéren ugyanolyan fát mutat meleg őszi lombbal.">
+                </div>
+                <div class="carousel-item">
+                    <img src="kepek/eszaki-feny-nagy.jpg" class="d-block w-100"
+                         alt="Sötét éjszakai tájkép: az előtérben csillogó folyó, a horizonton fenyőfák sziluettjei, felettük élénk sarki fény csíkok zöld, sárga, kék, lila és piros árnyalatokban.">
+                </div>
+                <div class="carousel-item">
+                    <img src="kepek/cseresznyefa-nagy.jpg" class="d-block w-100 kep-teteje"
+                         alt="Akrilfestmény: tekervényes fekete törzsű cseresznyefa fekete sziklán, koronájában rózsaszín és lila virágfoltok, körülötte fehér felhők narancs-sárga naplementés égbolton.">
+                </div>
+                <div class="carousel-item">
+                    <img src="kepek/tavaszi-nagy.jpg" class="d-block w-100"
+                         alt="Teljes felületet lefedő absztrakt akrilfestmény: kék, zöld, rózsaszín, narancssárga négyszögletes ecsetvonások, köztük átlós ívelt csíkok és apró virágszerű részletek.">
+                </div>
+                <div class="carousel-item">
+                    <img src="kepek/tengeren-nagy.jpg" class="d-block w-100 kep-alja"
+                         alt="Felülnézeti festmény: kék tónusú tenger fehér, zöld és türkiz vízfoltokkal; a bal-közép részen kis csónak lebeg, mellette sötétkék festékfolt.">
+                </div>
+                <div class="carousel-item">
+                    <img src="kepek/taska-nagy.jpg" class="d-block w-100 kep-alja"
+                         alt="Natúrszínű vászontáska: sötétkék csillagos égbolton kulcslyuk alakú nyílás, amelyen át naplementés égbolt és zöld rét látszik, a réten egy nő sziluettjével.">
+                </div>
+                <div class="carousel-item">
+                    <img src="kepek/polo-nagy.jpg" class="d-block w-100 kep-teteje"
+                         alt="Fehér rövid ujjú póló spirálmintás batikolással: középen sárga mag körül zöld, türkiz, kék, piros és narancssárga gyűrűk váltakoznak.">
+                </div>
+                <div class="carousel-item">
+                    <img src="kepek/seprü-nagy.jpg" class="d-block w-100 kep-teteje"
+                         alt="Fa seprűnyél szivárványszínekre festve: alulról felfelé piros, narancs, sárga, zöld, kék, lila, majd ismét piros következik.">
+                </div>
+                <div class="carousel-item">
+                    <img src="kepek/hutorajz-nagy.jpg" class="d-block w-100"
+                         alt="Nagy fehér papíron spontán, gyermekkel közösen készített absztrakt mű: tintahalszerű formák, kék és lila körök, narancssárga hullámvonalak, piros virágok, sárga csigavonalak.">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button"
+                    data-bs-target="#galeriaCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Előző</span>
+            </button>
+            <button class="carousel-control-next" type="button"
+                    data-bs-target="#galeriaCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Következő</span>
+            </button>
+        </div>
+    </section>
+
+    <section>
+        <p class="figyelem"><strong>Figyelem!</strong> Az oldal nem professzionális művészeti oktatás, hanem egy szubjektív kalandozás az akrilfestés világában.</p>
+        <p><a href="folyamat.html">Ugrás az alkotás folyamatához</a></p>
+    </section>
+
+    <section>
+        <h2>A cél helyett az út maga</h2>
+        <p>A festés folyamata néha izgalmasabb, mint maga a kész mű. Az alábbi videóban egy absztrakt kompozíció születését kísérhetjük végig.</p>
+
+        <figure>
+            <video controls
+                   src="media/sergo-pouringacrylic.mp4"
+                   poster="kepek/video-poszter.jpg"
+                   aria-describedby="video-leiras">
+                Az Ön böngészője nem támogatja a videó lejátszást.
+            </video>
+            <figcaption>Akrilfestés öntéses technikával – virágminta pet palack aljával</figcaption>
+        </figure>
+
+        <p class="nyomtatas">A nyomtatási nézetből a videót eltávolítottuk.</p>
+
+        <details id="video-leiras">
+            <summary>A videó szöveges leírásának megtekintése</summary>
+            <p>A videó rögzített kameraállásban mutat egy készülő festményt. A vászon fényes fekete alapozású, közepén egy pet palack levágott alja van a vászonra fordítva. A videó indulásakor már több réteg narancssárga, citromsárga, kék, lila és fehér festék folyt le a pet palack aljának barázdáiban, ezzel kirajzolva egy öt szirmú virágot. A videó során egy kezet láthatunk, ahogy átlátszó műanyag poharakból sorra egymás után önti a színes festékeket a pet palack aljának közepére. A festékek szétfolynak 5 irányba, tovább növelve a virágot.</p>
+        </details>
+    </section>
+
+    <div class="vissza-teteje-doboz">
+        <a href="#lap-teteje" class="vissza-tetejere">↑ Vissza a lap tetejére</a>
+    </div>
+
+</main>
+
+<footer>
+    <div class="container-lg">
+        <address>
+            <p>Készítette: Klein Viktória</p>
+        </address>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    var styleSwitcher = document.getElementById('styleSwitcher');
+    styleSwitcher.addEventListener('change', function () {
+        document.body.className = this.value === 'kontrasztos' ? 'kontrasztos' : '';
+    });
+</script>
+
+</body>
+</html>
